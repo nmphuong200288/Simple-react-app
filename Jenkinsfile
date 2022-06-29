@@ -18,8 +18,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                // sh 'npm run test'
-                echo 'run tests here'
+                sh 'npm run test'
+                // echo 'run tests here'
             }
         }
         stage('Build Image') {
